@@ -118,7 +118,7 @@ color: #df0000;
     width: 100%;
     min-height: 100vh;
     background-color: rgb(255, 255, 255) ;
-
+   max-height: max-content;
 }
 
 .page2 h2{
@@ -131,19 +131,291 @@ color: #df0000;
 
 .sdiv{
     width: 100%;
-    height: 80vh;
+    min-height: 100vh;
    display: flex;
    align-items: center;
    justify-content: space-around;
    flex-wrap: wrap;
+   cursor: none;
 }
 
 .sdiv img{
     width: 300.4px;
+    position: relative;
+
+}
+
+
+.sdiv .ufclogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    color: #df0000;
+    font-weight: 700;
+     scale: 0;
+    opacity: 0;
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    z-index: 0;
 }
 
 .page3{
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+  background-color: #fff;
+   position: relative;
+   margin-top: 100px;
+}
+
+
+.subpage{
+    width: 100vw;
+    height: 100vh;
+    background-color: peachpuff;
+    position: absolute;
+    background-position: top left; 
+  background-repeat: no-repeat; 
+    background-size: cover;
+    top: -3px;
+    display: none;
+}
+
+.page3 #left{
+    position: absolute;
+    top: 50%;
+    font-size: 3vw;
+    width: 5vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 12;
+    color: white;
+}
+
+.page3 #right{
+    position: absolute;
+    top: 50%;
+    right:0;
+    font-size: 3vw;
+    width: 5vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    z-index: 12;
+    justify-content: center;
+    color: white;
+}
+
+#subpage1{
+    background-image: url(images/volk.webp);
+}
+#subpage2{
+    background-image: url(images/alex.webp);
+}
+#subpage3{
+    background-image: url(images/gear.jpg);
+}
+
+.page4{
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+
+}
+
+.shortimg1{
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shortimg1 .simg{
+    width: 320px;
+    height: 100%;
+    border-bottom: 0.5px solid lightgray;
+    padding: 15px;
+}
+
+.shortimg1 .simg img{
+    width: 100%;
+}
+
+.shortimg1 .simg :nth-child(2){
+    font-weight: 900;
+    padding: 10px ;
+}
+
+.shortimg1 .simg :nth-child(3){
+    padding:20px 10px ;
+}
+
+
+
+.shortimg2{
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shortimg2 .simg{
+    width: 320px;
+    height: 100%;
+    border-bottom: 0.5px solid lightgray;
+    padding: 15px;
+}
+
+.shortimg2 .simg img{
+    width: 100%;
+}
+
+.shortimg2 .simg :nth-child(2){
+    font-weight: 900;
+    padding: 10px ;
+}
+
+.shortimg2 .simg :nth-child(3){
+    padding:20px 10px ;
+}
+
+
+
+
+
+.shortimg3{
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shortimg3 .simg{
+    width: 320px;
+    height: 100%;
+    border-bottom: 0.5px solid lightgray;
+    padding: 15px;
+}
+
+.shortimg3 .simg img{
+    width: 100%;
+}
+
+.shortimg3 .simg :nth-child(2){
+    font-weight: 900;
+    padding: 10px ;
+}
+
+.shortimg3 .simg :nth-child(3){
+    padding:20px 10px ;
+}
+
+
+.shortimg4{
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shortimg4 .simg{
+    width: 320px;
+    height: 100%;
+    border-bottom: 0.5px solid lightgray;
+    padding: 15px;
+}
+
+.shortimg4 .simg img{
+    width: 100%;
+}
+
+.shortimg4 .simg :nth-child(2){
+    font-weight: 900;
+    padding: 10px ;
+}
+
+.shortimg4.simg :nth-child(3){
+    padding:20px 10px ;
+}
+
+
+footer{
+    width: 100%;
+    min-height: 50vh;
+    background-color: #f4f5f5;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-height: max-content;
+}
+
+.fdiv1{
+    width: 250px;
+}
+
+.fdiv{
+    width: 250px;
+}
+
+.fdiv1 p{
+    font-size: 1.5vw;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+  
+}
+
+.fdiv1 ul{
+    list-style: none;
+}
+
+.fdiv1 ul li{
+    font-size:1.2vw ;
+    font-weight: 200;
+    padding: 10px;
+    
+}
+
+.fdiv p{
+    font-size: 1.2vw;
+    padding: 20px;
+}
+
+.fdiv div{
+    width: 88%;
+    margin: auto;
+    height: 7vh;
+    background-color: #df0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  color: #fff   ;
+}
+
+
+.fdiv img{
+    width:180px;
+   mix-blend-mode: darken;
 }
