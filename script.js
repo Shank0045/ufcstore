@@ -115,7 +115,7 @@ right.addEventListener("click",nextslide);
 function previousslide(){
     subpages[currentindex].style.display="none";
 
-    currentindex=(currentindex-1)%subpages.length;
+    currentindex=(currentindex-1 + subpages.length)%subpages.length;
 
     subpages[currentindex].style.display="block"
 
