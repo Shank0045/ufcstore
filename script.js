@@ -1,57 +1,55 @@
-function locomotive(){
-    const scroll = new LocomotiveScroll({
-        el: document.querySelector('.mainloco'),
+
+
+function gl() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Initialize Locomotive Scroll
+    const locoScroll = new LocomotiveScroll({
+        el: document.querySelector(".mainloco"),
         smooth: true,
-        lerp:0.10,
+    });
+
+    // Make sure ScrollTrigger is synced with Locomotive Scroll
+    locoScroll.on("scroll", ScrollTrigger.update);
+
+    // Tell ScrollTrigger to use Locomotive Scroll for scrolling
+    ScrollTrigger.scrollerProxy(".mainloco", {
+        scrollTop(value) {
+            return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+        },
+        getBoundingClientRect() {
+            return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+        },
+        pinType: document.querySelector(".mainloco").style.transform ? "transform" : "fixed"
+    });
+
+    
+
+    // Handle window resize and refresh ScrollTrigger
+    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+    // Refresh ScrollTrigger after everything is set up
+    ScrollTrigger.refresh();
+
+    // Fix for possible issues after page reload: call update() method
+    window.addEventListener('load', () => {
+        locoScroll.update();
+        ScrollTrigger.refresh();
+    });
+
+    window.addEventListener('resize', () => {
+        locoScroll.update();
+        ScrollTrigger.refresh();
     });
 }
 
-locomotive()
-
-function gl(){
-    gsap.registerPlugin(ScrollTrigger);
-
-// Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
-
-const locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".mainloco"),
-  smooth: true
-});
-// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
-locoScroll.on("scroll", ScrollTrigger.update);
-
-// tell ScrollTrigger to use these proxy methods for the ".mainloco" element since Locomotive Scroll is hijacking things
-ScrollTrigger.scrollerProxy(".mainloco", {
-  scrollTop(value) {
-    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-  }, // we don't have to define a scrollLeft because we're only scrolling vertically.
-  getBoundingClientRect() {
-    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
-  },
-  // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-  pinType: document.querySelector(".mainloco").style.transform ? "transform" : "fixed"
-});
 
 
 
-
-
-// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
-// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-ScrollTrigger.refresh();
-
-}
-
-gl()
 
 function ufclogo(){
     
 let ufclogo=document.querySelector(".ufclogo");
-
-
-
 
 
 let imgcon=document.querySelector(".sdiv")
@@ -82,7 +80,6 @@ imgcon.addEventListener("mousemove",function(e){
 })
 }
 
-ufclogo()
 
 
 function slider(){
@@ -115,7 +112,7 @@ right.addEventListener("click",nextslide);
 function previousslide(){
     subpages[currentindex].style.display="none";
 
-    currentindex=(currentindex-1)%subpages.length;
+    currentindex=(currentindex-1 +subpages.length )%subpages.length;
 
     subpages[currentindex].style.display="block"
 
@@ -125,4 +122,7 @@ left.addEventListener("click",previousslide)
 }
 
 
+
+gl()
+ufclogo()
 slider()
