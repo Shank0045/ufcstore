@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="master.css" />
+  <link rel="stylesheet" href="login.css" />
   <title>Venum UFC Unrivaled Merchandise | www.ufcstore.com</title>
   <meta
     content="Browse UFC Venum Unrivaled merchandise at www.ufcstore.com. UFC Store offers licensed Venum UFC Unrivaled for every fan in your family."
@@ -59,7 +59,7 @@
         </li>
         <li>
           <a href="https://www.ufcstore.com/cart?_ref=cart-icon&qty=0">
-            <i class="fa-solid fa-cart-shopping"></i>
+      <a href="cart.html">            <i class="fa-solid fa-cart-shopping"></i>  </a>
           </a>
         </li>
       </ul>
@@ -83,14 +83,49 @@
       <i class="fa-solid fa-down-long"></i>
     </div>
     <div class="pageli">
-      <a>Home</a>
-      <a>Single Product Page</a>
-      <a>Cart</a>
-      <a>Log IN</a>
+      <a href="index.html" >Home</a>
+      <a href="pd.html">Single Product Page</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html">Log IN</a>
     </div>
+    <div class="ham">
+        <i class="fa-solid fa-bars"></i>
+       <div class="slidebar">
+        <div class="wrong">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="pd.html">Single Product Page</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Log IN</a>
+        </div>
+      </div>
   </div>
 
   <div class="mainpage">
+   <form class="log" action="index.html">   
+     <h3>Log in</h3>
+    <p id="nm">not a member yet <a >Create Account</a></p>
+    <input type="email"  class="email" required placeholder="E-mail">
+    <input type="password" class="pas" required minlength="8" placeholder="password">
+    <div><input type="checkbox" required  id="check"> <label for="check">remember me</label></div> 
+    <button>Log In</button>
+    <p id="fp">Forgot Password</p>
+  </form>
+
+  <form action="cart.html" class="rigi">
+    <h3>REGISTER</h3>
+    <p id="al">already a member <a >Log In</a></p>
+  <div class="rname">
+    <input type="text" required placeholder="first name" >
+    <input type="text" required placeholder="Second name" >
+  </div>
+    <input class="email" type="email" required placeholder="E-mail">
+    <input class="email" type="password" required minlength="8" placeholder= "password*" >
+    <input class="email" type="password" required minlength="8" placeholder="Confirm password*">
+<p id="tp">By signing up, you agree to our Terms of Use & Privacy Policy</p>
+<button>Create An Account</button>
+  </form>
 
   </div>
 
@@ -137,7 +172,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"
     integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="master.js"> </script>
+  <script src="login.js"> </script>
 </body>
 
 </html>

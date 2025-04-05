@@ -642,6 +642,13 @@ footer {
 
   display: none;
 }
+.pageli a{
+    text-decoration: none;
+    color: rgb(222 173 77);
+}
+.clickdiv{
+    color: rgb(222 173 77);
+}
 
 .slidebar{
     width: 70%;

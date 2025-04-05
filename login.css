@@ -473,6 +473,189 @@ footer {
 
 }
 
+.slidebar{
+    width: 70%;
+    height: 590px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 10;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    left: -500px;
+    transition: all 1s ease;
+}
+
+.wrong{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    margin-right: 50px;
+}
+.pageli a{
+    text-decoration: none;
+    color: rgb(222 173 77);
+}
+
+.clickdiv{
+    color: rgb(222 173 77);
+}
+
+.ham i{
+    font-size: 50px;
+
+ }
+
+ .ham{
+    width: 100%;
+    height: 10vh;
+    background-color: #000000;
+    margin-top: 20px;
+  position: relative;
+
+  display: none;
+}
+.mainpage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mainpage form{
+    width: 370px;
+    height: 470px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+   padding: 10px;
+       text-transform: capitalize;
+   position: absolute;
+}
+
+.log{
+  opacity: 1;
+}
+.rigi{
+   opacity: 0;
+   display: none;
+   z-index: -1;
+}
+
+
+#nm a{
+    font-weight: 900;
+    color: #df0000;
+    cursor: pointer;
+}
+
+#al a{
+    font-weight: 900;
+    color: #df0000;  
+    cursor: pointer;
+}
+
+
+.log h3{
+    font-size: 2.5rem;
+    padding: 5px;
+        text-transform: capitalize;
+}
+
+.log :nth-child(2){
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: 10px;
+}
+
+.log  .email{
+    width: 250px;
+    height: 40px;
+        padding: 5px;
+}
+
+.log  .pas{
+    width: 250px;
+    height: 40px;
+        margin: 10px;
+}
+
+#check{
+    margin: 20px;
+   
+}
+
+.log label{
+    text-transform: capitalize;
+}
+
+.log button{
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #df0000;
+    font-size: 15px;
+    color: #fff;
+}
+
+#fp{
+    font-size: 1.3rem;
+    padding: 10px;
+    margin: 20px 0px;
+
+}
+
+.rigi h3{
+    font-size: 2.5rem;
+        text-transform: capitalize;
+
+}
+
+.rigi #al{
+    font-size: 1.2rem;
+
+    margin: 7px;
+}
+
+.rname input{
+    width: 125px;
+    height: 40px;
+
+    margin: 7px;
+}
+
+.rigi .email{
+    width: 250px;
+    height: 40px;
+    margin: 7px;
+}
+
+#tp{
+    text-align: center;
+    margin: 5px;
+}
+
+.rigi button{
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #df0000;
+    font-size: 15px;
+    color: #fff;
+    margin: 10px auto;
+}
+
 @media (width < 800px) {
     nav{
      min-height: 11vh;
@@ -529,10 +712,37 @@ footer {
  }
 
 
-.mainpage {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-color: peachpuff;
 
+
+@media (width<690px) {
+    
+    .pageli {
+        width: 100%;
+        height: 20vh;
+        font-size: 1.5rem;
+        display: none
+;
+     
+    }
+
+    .ham {
+        width: 100%;
+        height: 10vh;
+        background-color: #000000;
+        margin-top: 20px;
+        position: relative;
+        display: block;
+    }
 }
+
+@media (width<390px) {
+    .pagech .clickdiv{
+        font-size: 1.4rem;
+    }
+    }
+
+    @media (width<400px) {
+        .mainpage form{
+            width: 300px;
+        }
+    }

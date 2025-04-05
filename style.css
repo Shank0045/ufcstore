@@ -159,6 +159,11 @@ color: #df0000;
 
 }
 
+.pageli a{
+    text-decoration: none;
+    color: rgb(222 173 77);
+}
+
 
 .sdiv .ufclogo{
     width: 100px;
