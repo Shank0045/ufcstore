@@ -486,6 +486,7 @@ footer {
     flex-direction: column;
     left: -500px;
     transition: all 1s ease;
+    border-bottom-right-radius: 50px;
 }
 
 .wrong{
@@ -515,7 +516,7 @@ footer {
     background-color: #000000;
     margin-top: 20px;
   position: relative;
-
+  color: rgb(222 173 77);
   display: none;
 }
 .mainpage {

@@ -489,6 +489,7 @@ footer{
     flex-direction: column;
     left: -500px;
     transition: all 1s ease;
+    border-bottom-right-radius: 50px;
 }
 
 .wrong{

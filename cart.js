@@ -106,7 +106,7 @@ function cart() {
         <div class="t"><p>Total item </p> <p> $129.99 x ${count}</p></div>
         <div class="c"><p>Total cart </p> <p>$${129.99 * count}</p></div>
       </div>
-      <button id="b"><i class="fa-solid fa-lock"></i> Checkout</button>
+      <a  href="login.html">   <button id="b"><i class="fa-solid fa-lock"></i> Checkout</button></a>
       <button><i class="fa-brands fa-paypal"></i>Paypal checkout</button>
       `;
 

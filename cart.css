@@ -486,6 +486,7 @@ footer {
     flex-direction: column;
     left: -500px;
     transition: all 1s ease;
+    border-bottom-right-radius: 50px;
 }
 
 .wrong{
@@ -498,7 +499,7 @@ footer {
 
 .ham i{
     font-size: 50px;
-
+    color: rgb(222 173 77);
  }
 
  .ham{
@@ -594,6 +595,8 @@ footer {
     padding: 5px;
     margin: 10px;
 }
+
+
 
 .detail input{
     width: 80px;

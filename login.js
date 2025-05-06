@@ -24,6 +24,23 @@
 
   
   click();
+
+
+  let forgot=()=>{
+
+ let fp=document.getElementById("fp");
+
+ fp.addEventListener("click",function(){
+   
+    alert(" Its Not Our Fault")
+
+ })
+
+
+
+  }
+
+  forgot()
   
 
   function slidx(){
