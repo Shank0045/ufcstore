@@ -1,47 +1,47 @@
 🥋 UFC Store – Ultimate Fight Gear Shop
 Welcome to the UFC Store — a sleek, responsive e-commerce site built for MMA enthusiasts! Whether you're shopping from your phone or computer, this project delivers a seamless experience packed with punch 🥊.
 
-🌐 Live Site: ufcstore
+🌐 Live Site: https://shank0045.github.io/ufcstore/
 
 📱 Optimized for All Devices
-✅ Mobile-friendly
-✅ Tablet-ready
-✅ Desktop-supported
+✅ Mobile-friendly </br>
+✅ Tablet-ready</br>
+✅ Desktop-supported</br>
 
-This store is fully responsive and works great across mobile, tablet, and desktop devices.
+This store is fully responsive and works great across mobile, tablet, and desktop devices.</br>
 
-📦 Project Features
-🏠 Home Page: Browse featured UFC gear
+📦 Project Features</br>
+🏠 Home Page: Browse featured UFC gear</br>
 
-🛍️ Product Detail Page: View items with descriptions
+🛍️ Product Detail Page: View items with descriptions</br>
 
-🛒 Cart Page: Add/remove items and review orders
+🛒 Cart Page: Add/remove items and review orders</br>
 
-🔐 Login Page: Simple login form interface
+🔐 Login Page: Simple login form interface</br>
+</br>
+💻 Tech Stack</br>
+HTML5</br>
 
-💻 Tech Stack
-HTML5
+CSS3</br>
 
-CSS3
+JavaScript</br>
 
-JavaScript
-
-🗂️ Folder Structure
-bash
-Copy
-Edit
-ufcstore/
-├── index.html           # Home page
-├── login.html           # Login page
-├── pd.html              # Product details
-├── cart.html            # Shopping cart
-├── style.css            # Main styles
-├── login.css            # Login styles
-├── pd.css               # Product details styles
-├── cart.css             # Cart styles
-├── script.js            # Main JavaScript
-├── login.js             # Login script
-└── images/              # Image assets
+🗂️ Folder Structure</br>
+bash</br>
+Copy</br>
+Edit</br>
+ufcstore/</br>
+├── index.html           # Home page</br>
+├── login.html           # Login page</br>
+├── pd.html              # Product details</br>
+├── cart.html            # Shopping cart</br>
+├── style.css            # Main styles</br>
+├── login.css            # Login styles</br>
+├── pd.css               # Product details styles</br>
+├── cart.css             # Cart styles</br>
+├── script.js            # Main JavaScript</br>
+├── login.js             # Login script</br>
+└── images/              # Image assets</br>
 🚀 Getting Started
 Clone the repository:
 
@@ -52,8 +52,7 @@ git clone https://github.com/Shank0045/ufcstore.git
 cd ufcstore
 Open index.html in your browser, or run it via a local server for best experience.
 
-🧪 Screenshots
-(Add actual screenshots here for better visual showcase)
+
 
 📣 Credits
 🔗 UFC for thematic inspiration
